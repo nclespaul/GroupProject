@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<title>Login modal</title>
+<style type="text/css">
+
+h3 {
+    text-align: center;
+}
+
+.modal-dialog {
+    width: 25%;
+}
+
+img {
+    margin-bottom: 20px;
+}
+
+.tabs-left, .tabs-right {
+  border-bottom: none;
+  padding-top: 2px;
+}
+
+.tabs-left {
+  border-right: 1px solid #ddd;
+}
+
+.tabs-left>li, .tabs-right>li {
+  float: none;
+  margin-bottom: 2px;
+}
+
+.tabs-left>li {
+  margin-right: -1px;
+}
+
+.tabs-left>li.active>a,
+.tabs-left>li.active>a:hover,
+.tabs-left>li.active>a:focus {
+  border-color: #bbb;
+  border-right-color: transparent;
+}
+
+.tabs-left>li>a {
+  border-radius: 4px 0 0 4px;
+  margin-right: 0;
+  display:block;
+}
+
+img {
+    height: 40%;
+    width: 40%;
+}
+
+#tech img {
+    height: 40%;
+    width: 40%;
+}
+
+#logo {
+    height: 30%;
+    width: 30%;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Button to initialize modal -->
+<div class="container"> 
+  <button class="btn btn-primary btn-lg" href="#signup" data-toggle="modal" data-target=".bs-modal-sm">Sign In / Register</button>
+</div>
+  
+
+<!-- Modal begins -->
+<div class="modal fade bs-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content"><br>
+        <div class="bs-example bs-example-tabs">
+            <center><img src="../images/images.jpg" alt="" id="logo"><br></center>
+            <h3>Customize your experience</h3>
+            <div class="row" style="min-height:480px;">
+                <div  class="col-sm-12">                    
+                    <hr/>
+                    <div class="col-xs-5">
+                        <!-- required for floating -->
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs tabs-left">
+                            <li class="active"><a href="#us" data-toggle="tab">U.S.</a></li>
+                            <li><a href="#world" data-toggle="tab">World</a></li>
+                            <li><a href="#bandf" data-toggle="tab">Business and Finance</a></li>
+                            <li><a href="#sports" data-toggle="tab">Sports</a></li>
+                            <li><a href="#pop" data-toggle="tab">TV and Celebrity</a></li>
+                            <li><a href="#tech" data-toggle="tab">Technology</a></li>
+                            <li><a href="#handw" data-toggle="tab">Health and Wellness</a></li>
+                            <li><a href="#style" data-toggle="tab">Style</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-7">
+                        <!-- Tab panes -->
+                        <!-- US tab checkboxes -->
+                        <div class="tab-content" style="margin-left: 30px;">
+                            <div class="tab-pane active" id="us">
+                                <img src="../images/map_usa_layers.gif">
+                                <div id="uslist" style="margin-left: 20px;">
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="useconomy">Economy</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="uscrime">Crime</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="uspolitics">Politics</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="ustechnology">Technology</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="useducation">Education</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="useande">Energy and Environment</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="usmilitary">Military</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="usgeneral">General</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="usforsale">For Sale</label>
+                                    </div>
+                                </div>
+                            </div>                        
+
+                        <!-- World tab checkboxes-->
+                            <div class="tab-pane" id="world">
+                                <img src="../images/Globe_Atlantic.svg">
+                                <div id="worldlist" style="margin-left: 20px;">
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="worldeconomy">Economy</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="worldcrime">Crime</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="worldpolitics">Politics</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="worldtechnology">Technology</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="worldeducation">Education</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="worldeande">Energy and Environment</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="worldmilitary">Military</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="worldgeneral">General</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="worldforsale">For Sale</label>
+                                    </div>                  
+                                </div>
+                            </div>
+
+                        <!-- Business and Finance tab checkboxes -->
+                            <div class="tab-pane" id="bandf">
+                                <img src="../images/small-business-and-tax-accounting-services-i-evolve-financial-services-3nuQvU-clipart.jpg">
+                                <div id="bandflist" style="margin-left: 20px;">
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="bandfmarkets">Markets</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="bandfrealestate">Real Estate</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="bandflaw">Law</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="bandfmoney">Money</label>
+                                    </div>                                                
+                                </div>
+                            </div>
+                        
+
+                        <!-- Sports tab checkboxes-->
+                            <div class="tab-pane" id="sports">
+                                <img src="../images/images (1).jpg">
+                                <div id="sportslist" style="margin-left: 20px;">
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="sportsnfl">NFL</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="sportsnba">NBA</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="sportsmlb">MLB</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="sportsnhl">NHL</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="sportsncaa">NCAA</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="sportsnascar">NASCAR</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="sportsboxing">Boxing</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="sportsMMA">MMA</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="sportsgolf">Golf</label>
+                                    </div>  
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="sportswrestling">Wrestling</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="sportshandf">Hunting and Fishing</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="sportsolympics">Olympics</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="sportstennis">Tennis</label>
+                                    </div>                                
+                                </div>
+                            </div>
+
+                        <!-- TV and Celebrity tab checkboxes -->
+                            <div class="tab-pane" id="pop">
+                                <img src="../images/11318697-3d-illustration-of-film-Stock-Illustration-music-film-video.jpg">
+                                <!--<h4><strong>The Rythym is Gonna Get You</strong></h4>-->
+                                <div id="poplist" style="margin-left: 20px;">
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="popmusic">Music</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="poptv">TV and Film</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="popbroadway">Broadway</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="popceleb">Celebrity</label>
+                                    </div>                                                                 
+                                </div>
+                            </div>
+
+                        <!-- Technology tab checkboxes -->
+                            <div class="tab-pane" id="tech">
+                                <img src="../images/SEO-Talent-vs-Technology.jpg">
+                                <div id="techlist" style="margin-left: 20px;">
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="techspace">Space</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="techauto">Automotive</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="techprosthetics">Prosthetics</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="techmilitary">Military</label>
+                                    </div>  
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="techai">Aritificial Intelligence</label>
+                                    </div>      
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="techenergy">Sustainable Energy</label>
+                                    </div>  
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="techconnectivity">Connectivity</label>
+                                    </div>   
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="techgenetics">Genetics</label>
+                                    </div> 
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="techinnovators">Innovators</label>
+                                    </div>                                                   
+                                </div>
+                            </div>
+
+                        <!-- Health and Wellness tab checkboxes -->
+                            <div class="tab-pane" id="handw">
+                                <img src="../images/images (3).jpg">
+                                <div id="handwlist" style="margin-left: 20px;">
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="handwfitness">Fitness</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="handwnutrition">Nutrition</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="handwfamily">Family</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="handwmind">Mind</label>
+                                    </div>  
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="handwaging">Aging</label>
+                                    </div>  
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="handwdandc">Diseases / Conditions</label>
+                                    </div>                                                                                           
+                                </div>
+                            </div>
+
+                        <!-- Style tab checkboxes -->
+                            <div class="tab-pane" id="style">
+                                <img src="../images/disney-festival-style-feature-242x141.jpg">
+                                <div id="stylelist" style="margin-left: 20px;">
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="stylemen">Men</label>
+                                    </div>  
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="stylewomen">Women</label>
+                                    </div>  
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="stylechildren">Children</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="stylefashion">Fashion</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="stylebeauty">Beauty</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="stylerunway">Runway</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="styleevents">Events</label>
+                                    </div>                                                                                                                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+</body>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</html>
